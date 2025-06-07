@@ -7,7 +7,7 @@ export class CurrencyConverter {
     }
 
     convert(from: string, to: string, amount: number): number {
-        const fromRate = this.rates[from]; // rates["EUR"]; yani 0.87
+        const fromRate = this.rates[from]; 
         const toRate = this.rates[to];
 
         if (!fromRate || !toRate) {
